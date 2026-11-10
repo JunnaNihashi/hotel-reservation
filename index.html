@@ -31,7 +31,7 @@
       <a href="#rooms">ROOMS</a>
       <a href="#stay">YOUR STAY</a>
       <a href="#access">ACCESS</a>
-      <a class="nav-reserve" href="mailto:hello@example.com">CONTACT</a>
+      <a class="nav-reserve" href="#reservation">RESERVATION</a>
     </nav>
   </header>
 
@@ -142,7 +142,7 @@
         <p class="eyebrow">03 / YOUR STAY</p>
         <h2 id="stay-title">The sea is yours.<br>The time is yours.</h2>
         <p>水面に映る光、頬をなでる風、夜に聞こえる島の音。プライベートプールとオーシャンビューのテラスで、思い思いの時間を。</p>
-        <a class="light-link" href="mailto:hello@example.com">PLAN YOUR STAY <span>↗</span></a>
+        <a class="light-link" href="#reservation">PLAN YOUR STAY <span>↗</span></a>
       </div>
     </section>
 
@@ -162,10 +162,29 @@
       </div>
     </section>
 
+    <section class="reservation section" id="reservation" aria-labelledby="reservation-title">
+      <div class="section-heading section-heading-center">
+        <p class="eyebrow">05 / RESERVATION</p>
+        <h2 id="reservation-title">Plan your stay.</h2>
+        <p class="section-intro">ご希望の滞在日とお部屋をお知らせください。</p>
+      </div>
+      <form class="reservation-form" id="reservation-form" novalidate>
+        <p class="form-required-note"><span class="required-mark">*</span> は必須項目です</p>
+        <div class="form-field"><label for="guest-name">お名前 <span class="required-mark">*</span></label><input id="guest-name" name="guestName" type="text" autocomplete="name" required placeholder="お名前を入力してください"><p class="field-error" id="guest-name-error"></p></div>
+        <div class="form-field"><label for="guest-email">メールアドレス <span class="required-mark">*</span></label><input id="guest-email" name="email" type="email" autocomplete="email" required placeholder="example@email.com"><p class="field-error" id="guest-email-error"></p></div>
+        <div class="form-field"><label for="guest-phone">電話番号 <span class="required-mark">*</span></label><input id="guest-phone" name="phone" type="text" inputmode="tel" autocomplete="tel" required placeholder="090-1234-5678"><p class="field-error" id="guest-phone-error"></p></div>
+        <div class="form-dates"><div class="form-field"><label for="checkin">チェックイン日 <span class="required-mark">*</span></label><input id="checkin" name="checkin" type="date" required><p class="field-error" id="checkin-error"></p></div><div class="form-field"><label for="checkout">チェックアウト日 <span class="required-mark">*</span></label><input id="checkout" name="checkout" type="date" required><p class="field-error" id="checkout-error"></p></div></div>
+        <div class="form-field"><label for="room-choice">お部屋 <span class="required-mark">*</span></label><select id="room-choice" name="room" required><option value="">選択してください</option><option value="THE HORIZON">THE HORIZON（ザ・ホライズン）</option><option value="THE TERRACE">THE TERRACE（ザ・テラス）</option><option value="THE RESIDENCE">THE RESIDENCE（ザ・レジデンス）</option></select><p class="field-error" id="room-choice-error"></p></div>
+        <div class="form-field"><label for="requests">ご要望など <span class="optional-mark">任意</span></label><textarea id="requests" name="requests" rows="5" maxlength="500" placeholder="ご要望があればご記入ください"></textarea><p class="character-count"><span id="requests-count">0</span> / 500文字</p></div>
+        <div class="form-actions"><button class="reservation-submit" type="submit">入力内容を確認する <span aria-hidden="true">↗</span></button></div>
+        <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
     <section class="closing">
       <p class="eyebrow">YOUR PRIVATE OKINAWA</p>
       <p>Make room for the moment.</p>
-      <a href="mailto:hello@example.com">CONTACT / INQUIRY <span>↗</span></a>
+      <a href="#reservation">RESERVATION / INQUIRY <span>↗</span></a>
     </section>
   </main>
 

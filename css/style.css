@@ -662,3 +662,26 @@ button {
     padding: 85px 18px;
   }
 }
+
+/* Reservation form */
+.reservation { background: #f5f2ec; }
+.reservation-form { max-width: 760px; margin: 55px auto 0; }
+.form-required-note { text-align: right; font-size: 12px; margin-bottom: 22px; }
+.required-mark { color: #a76f56; }
+.form-field { margin-bottom: 26px; }
+.form-field label { display: block; margin-bottom: 11px; font-size: 13px; letter-spacing: .08em; }
+.form-field input, .form-field select, .form-field textarea { box-sizing: border-box; width: 100%; padding: 15px 16px; border: 1px solid #d3d0c8; border-radius: 0; background: #fffdfa; color: #343a3a; font: inherit; font-size: 14px; outline-offset: 3px; }
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color: #7d8e87; }
+.form-field textarea { resize: vertical; min-height: 130px; }
+.form-field [aria-invalid="true"] { border-color: #a65345; }
+.form-dates { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.optional-mark { color: #777; font-size: 11px; margin-left: 8px; }
+.field-error { min-height: 0; margin: 6px 0 0; color: #a13f35; font-size: 12px; }
+.field-error:empty { display: none; }
+.character-count { text-align: right; font-size: 11px; color: #777; margin-top: 5px; }
+.form-actions { text-align: center; margin-top: 32px; }
+.reservation-submit { padding: 18px 45px; border: 1px solid #3d5551; background: #3d5551; color: #fff; cursor: pointer; letter-spacing: .12em; font: inherit; font-size: 13px; transition: background .2s; }
+.reservation-submit:hover { background: #293d39; }
+.reservation-submit span { margin-left: 20px; }
+.form-feedback { text-align: center; margin-top: 22px; line-height: 1.9; font-size: 13px; }
+@media (max-width: 600px) { .reservation-form { margin-top: 35px; } .form-dates { grid-template-columns: 1fr; gap: 0; } .reservation-submit { width: 100%; padding: 18px 15px; } }
