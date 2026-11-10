@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ご予約ありがとうございます | THE NAGI VILLA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/thanks.js" defer></script>
+</head>
+<body>
+  <header class="site-header thanks-header">
+    <a class="logo" href="index.html" aria-label="THE NAGI VILLA ホーム">
+      <span class="logo-main">THE NAGI</span>
+      <span class="logo-sub">PRIVATE VILLA / OKINAWA</span>
+    </a>
+    <a class="thanks-header-link" href="index.html">BACK TO HOME ↗</a>
+  </header>
+  <main class="thanks-main">
+    <section class="thanks-container" aria-labelledby="thanks-title">
+      <p class="eyebrow">THANK YOU FOR YOUR RESERVATION</p>
+      <div id="thanks-success" hidden>
+        <div class="thanks-symbol" aria-hidden="true">✓</div>
+        <h1 id="thanks-title">ご予約ありがとうございます</h1>
+        <p class="thanks-lead">ご入力いただいたご予約内容をご確認ください。</p>
+        <div class="thanks-details">
+          <h2>RESERVATION DETAILS <span>ご予約内容</span></h2>
+          <dl id="reservation-details"></dl>
+        </div>
+        <p class="thanks-note">※こちらは学習用のデモサイトです。実際の予約は成立しておらず、情報の送信・サーバー保存も行われていません。</p>
+      </div>
+      <div id="thanks-empty" hidden>
+        <h1 id="empty-title">予約内容を確認できませんでした</h1>
+        <p class="thanks-lead">予約フォームから必要事項を入力してください。</p>
+      </div>
+      <a class="thanks-back" href="index.html">トップページへ戻る <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer class="site-footer thanks-footer"><p>© 2026 THE NAGI VILLA. CONCEPT WEBSITE.</p></footer>
+</body>
+</html>

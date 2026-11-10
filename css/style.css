@@ -685,3 +685,23 @@ button {
 .reservation-submit span { margin-left: 20px; }
 .form-feedback { text-align: center; margin-top: 22px; line-height: 1.9; font-size: 13px; }
 @media (max-width: 600px) { .reservation-form { margin-top: 35px; } .form-dates { grid-template-columns: 1fr; gap: 0; } .reservation-submit { width: 100%; padding: 18px 15px; } }
+
+/* Thanks page */
+.thanks-header { position: relative; background: #f5f2ec; }
+.thanks-header-link { font-size: 11px; letter-spacing: .13em; text-decoration: none; color: #3d5551; }
+.thanks-main { background: #f5f2ec; min-height: 70vh; padding: 90px 20px 110px; }
+.thanks-container { max-width: 760px; margin: 0 auto; text-align: center; }
+.thanks-container .eyebrow { color: #7a8982; letter-spacing: .19em; }
+.thanks-symbol { width: 54px; height: 54px; margin: 30px auto 24px; border: 1px solid #81968c; border-radius: 50%; display: grid; place-items: center; color: #3d5551; font-size: 22px; }
+.thanks-container h1 { font-size: clamp(23px, 4vw, 34px); font-weight: 400; letter-spacing: .1em; line-height: 1.7; }
+.thanks-lead { margin: 18px auto 50px; color: #66716e; font-size: 14px; line-height: 2; }
+.thanks-details { background: #fffdfa; padding: 36px 45px; text-align: left; }
+.thanks-details h2 { font: 22px 'Playfair Display', serif; font-weight: 400; letter-spacing: .07em; padding-bottom: 25px; border-bottom: 1px solid #dddcd5; }
+.thanks-details h2 span { font: 12px 'Noto Sans JP', sans-serif; color: #66716e; margin-left: 12px; }
+.thanks-detail-row { display: grid; grid-template-columns: 180px 1fr; gap: 18px; padding: 18px 0; border-bottom: 1px solid #e9e7e1; font-size: 13px; line-height: 1.9; }
+.thanks-detail-row dt { color: #73817a; } .thanks-detail-row dd { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.thanks-note { color: #69736f; font-size: 12px; line-height: 2; margin: 25px 0 40px; }
+.thanks-back { display: inline-block; padding: 18px 42px; margin-top: 34px; background: #3d5551; color: #fff; text-decoration: none; font-size: 13px; letter-spacing: .12em; }
+.thanks-back span { margin-left: 18px; } .thanks-back:hover { background: #293d39; }
+.thanks-footer { justify-content: center; }
+@media(max-width:600px) { .thanks-main { padding: 60px 18px 80px; } .thanks-details { padding: 25px 20px; } .thanks-details h2 span { display: block; margin: 10px 0 0; } .thanks-detail-row { grid-template-columns: 1fr; gap: 3px; } .thanks-header-link { font-size: 10px; } }
