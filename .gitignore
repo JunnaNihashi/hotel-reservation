@@ -1,1 +1,3 @@
-git status
+.env
+.env.*
+!.env.example
